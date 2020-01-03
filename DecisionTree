@@ -1,0 +1,48 @@
+###IMPORTING ALL MODULES####
+import pandas as pd
+import numpy as np
+import sklearn
+#############################
+
+#####READ THE TRAIN DATA#########
+data_full = pd.read_csv('<path of the file>')
+#################################
+
+##CLEAN THE DATA - BASICS######
+data_full=data_full.dropna(axis=0) #Removed Empty Fields
+###############################
+
+########Break Data Into Test and Train#################
+from sklearn.model_selection import train_test_split
+
+train_
+
+########################################################
+
+##DEFINE TARGET(TO BE PREDICTED) and FEATURES(DATA FIELDS USED FOR PREDICTION)###
+ target_y = data_full.<field_name>
+ features_x = data.full['feature_1','feature_2','feature_3','feature_4']
+ 
+ #----NOTE == SKLEARN only predicts and accepts numeric values and and need hot encoding to accepts string types
+ 
+ ##################################################################################
+
+
+##############----IMPORTING MODEL-----######################
+from sklearn.tree import DecisionTree
+############################################################
+
+#####Define the model#################
+model_1=DecisionTree(random_state=1)
+######################################
+
+####FIT THE MODEL#####################
+model_1.fit(features_x, target_y)
+######################################
+
+
+####PREDICT THE RESULT##############
+
+prediction_result =  model_1.Predict(features_x)
+
+####################################
